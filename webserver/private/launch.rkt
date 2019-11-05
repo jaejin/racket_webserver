@@ -8,7 +8,7 @@
 (define port (make-parameter #f))
 
 (define configuration@
-  (parse-command-line
+  (parse-command-line ;; https://docs.racket-lang.org/reference/Command-Line_Parsing.html?q=parse-command-line#%28def._%28%28lib._racket%2Fcmdline..rkt%29._parse-command-line%29%29
    "plt-web-server"
    (current-command-line-arguments)
    `((once-each
